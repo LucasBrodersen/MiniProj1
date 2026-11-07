@@ -1,0 +1,19 @@
+/* Estilos globais da página */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* O #app é uma coluna com a altura do ecrã: barra no topo, conteúdo no meio, rodapé em baixo */
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* O conteúdo ocupa o espaço que sobra e empurra o rodapé para o fundo */
+main {
+  flex: 1;
+}
