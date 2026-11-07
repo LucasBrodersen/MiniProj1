@@ -1,38 +1,56 @@
-# miniproj1
+# MiniProj1
 
-This template should help get you started developing with Vue 3 in Vite.
+A minha página pessoal, feita como SPA (Single Page Application) com Vue.js.
+É uma única página que muda de secção sem recarregar, com um menu no topo e os
+meus contactos sempre visíveis no rodapé.
 
-## Recommended IDE Setup
+## O que tem
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Quem sou eu?** — uma apresentação minha
+- **O que faço?** — o meu trabalho e as tecnologias que uso
+- **Hobbies e interesses** — o que gosto de fazer fora do trabalho
+- **Rodapé** com ligações para o Facebook, GitHub e LinkedIn
 
-## Recommended Browser Setup
+A secção atual fica no endereço (por exemplo `#hobbies`), por isso o botão
+"Voltar" do browser funciona como esperado.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Como correr
 
-## Customize configuration
+Precisas de Node.js `^22.18` ou `>=24.12`.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+Depois abre <http://localhost:5173> no browser.
 
-```sh
-npm run build
+Para gerar a versão final, usa `npm run build`. Os ficheiros ficam na pasta `dist/`.
+
+## Estrutura
+
 ```
+src/
+├── App.vue                  # junta tudo e decide que secção mostrar
+├── main.js
+├── assets/main.css          # estilos globais
+└── components/
+    ├── NavBar.vue           # menu com os links internos
+    ├── QuemSou.vue
+    ├── OQueFaco.vue
+    ├── Hobbies.vue
+    └── RodapeSocial.vue     # ícones das redes sociais
+docs/wireframes/             # esboços das páginas
+```
+
+## Wireframes
+
+Os esboços das páginas estão em [`docs/wireframes`](docs/wireframes/README.md).
+
+## Feito com
+
+[Vue 3](https://vuejs.org/), [Vite](https://vite.dev/) e [Font Awesome](https://fontawesome.com/) (ícones).
+
+## Autor
+
+Lucas Brodersen — [GitHub](https://github.com/LucasBrodersen) · [LinkedIn](https://www.linkedin.com/in/lucas-brodersen/)
