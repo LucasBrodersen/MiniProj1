@@ -1,8 +1,8 @@
 <script setup>
 const redes = [
-  { nome: 'Facebook', url: 'https://www.facebook.com/', icone: 'fa-brands fa-facebook' },
-  { nome: 'GitHub', url: 'https://github.com/', icone: 'fa-brands fa-github' },
-  { nome: 'LinkedIn', url: 'https://www.linkedin.com/', icone: 'fa-brands fa-linkedin' },
+  { nome: 'Facebook', url: 'https://www.facebook.com/lucasbrodersenbr', icone: 'fa-brands fa-facebook' },
+  { nome: 'GitHub', url: 'https://github.com/LucasBrodersen', icone: 'fa-brands fa-github' },
+  { nome: 'LinkedIn', url: 'https://www.linkedin.com/in/lucas-brodersen/', icone: 'fa-brands fa-linkedin' },
 ]
 </script>
 
