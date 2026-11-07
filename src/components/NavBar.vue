@@ -1,7 +1,6 @@
 <script setup>
-// Recebe a secção ativa e avisa o App quando o utilizador clica noutra
+// Recebe a secção ativa só para destacar o link correspondente
 defineProps({ atual: String })
-const emit = defineEmits(['mudar'])
 
 const links = [
   { id: 'quem-sou', texto: 'Quem sou eu?' },
@@ -15,9 +14,8 @@ const links = [
     <ul>
       <li v-for="link in links" :key="link.id">
         <a
-          href="#"
+          :href="'#' + link.id"
           :class="{ ativo: link.id === atual }"
-          @click.prevent="emit('mudar', link.id)"
         >
           {{ link.texto }}
         </a>
